@@ -1,0 +1,15 @@
+(() => {
+  let userId: string | number;
+  userId = 1212;
+  userId = 'asd';
+
+  function greeting(myText: string | number) {
+    if(typeof myText === 'string') {
+      console.log(`string ${myText.toLowerCase()}`);
+    } else {
+      console.log(`number ${myText.toFixed(1)}`);
+    }
+  }
+  greeting('ASAS');
+  greeting(123);
+})()
